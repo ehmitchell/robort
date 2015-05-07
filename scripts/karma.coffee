@@ -65,7 +65,7 @@ class Karma
   clearAllowances: ->
     @allowances = {}
     @robot.brain.data.karmaAllowances = {}
-    
+
   selfDeniedResponses: (name) ->
     @self_denied_responses = [
       "Hey everyone! #{name} is a narcissist!",
@@ -73,21 +73,21 @@ class Karma
       "I can't do that #{name}.",
       "Shut it down, #{name}"
     ]
-    
+
   shortOnKarmaResponses: (name) ->
     @short_on_karma_responses = [
       "#{name}: Get your own karma first, you slacker!",
       "To be the man, you've gotta beat the man, #{name}.",
       "You need more vespene gas, #{name}."
     ]
-    
+
   decrementResponses: (name, subject, nKarma, sKarma) ->
     @decrement_responses = [
-      "#{subject}(#{sKarma}) took a hit from #{name}(#{nKarma})! Ouch.", 
+      "#{subject}(#{sKarma}) took a hit from #{name}(#{nKarma})! Ouch.",
       "#{subject}(#{sKarma}) got punked by #{name}(#{nKarma}).",
-      "#{name}(#{nKarma}) took out a hit on #{subject}(#{sKarma}).",  
-      "#{name}(#{nKarma}) stole street cred from #{subject}(#{sKarma})",
-      "#{subject}(#{sKarma}) lost a level because of #{name}(#{nKarma}).", 
+      "#{name}(#{nKarma}) took out a hit on #{subject}(#{sKarma}).",
+      "#{name}(#{nKarma}) sabotaged #{subject}(#{sKarma})",
+      "#{subject}(#{sKarma}) lost a level because of #{name}(#{nKarma}).",
       "#{subject}(#{sKarma}) - ya burnt. #{name}(#{nKarma}) - ya burnter"
     ]
 
